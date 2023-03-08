@@ -2,6 +2,7 @@
   "name": "netflix_clone",
   "version": "1.0.0",
   "description": "This is the server side of the project",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node server/index",
