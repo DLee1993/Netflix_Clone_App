@@ -15,7 +15,7 @@
     background-position: center 44%;
     background-size: cover;
     width: 100%;
-    @include fluidType(height, 320px, 2000px, 600px, 825px);
+    @include fluidType(height, 320px, 2000px, 625px, 825px);
     border-bottom: 8px solid #222;
 
     .promo_banner {
@@ -116,7 +116,7 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
-            @include fluidType(height, 320px, 2000px, 300px, 600px);
+            @include fluidType(height, 320px, 2000px, 350px, 600px);
             text-align: center;
 
             & h1 {
@@ -138,11 +138,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             margin-top: 20px;
+
+            @media screen and (min-width: 700px) {
+                flex-direction: row;
+            }
 
             & .register_input {
                 @include fluidType(width, 320px, 2000px, 300px, 500px);
-                @include fluidType(height, 320px, 2000px, 50px, 70px);
+                @include fluidType(height, 320px, 2000px, 40px, 70px);
                 @include fluidType(font-size, 320px, 2000px, 14px, 16px);
                 padding-left: 10px;
                 color: #8c8c8c;
@@ -152,6 +157,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                margin-top: 10px;
                 @include fluidType(width, 320px, 2000px, 130px, 245px);
                 @include fluidType(height, 320px, 2000px, 40px, 70px);
                 @include fluidType(font-size, 320px, 2000px, 16px, 30px);
@@ -161,6 +167,10 @@
 
                 & svg {
                     margin-left: 5px;
+                }
+
+                @media screen and (min-width: 700px) {
+                    margin-top: 0;
                 }
             }
         }

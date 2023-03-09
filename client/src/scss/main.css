@@ -7,11 +7,11 @@
   border-bottom: 8px solid #222;
 }
 .background-image-container {
-  height: 600px;
+  height: 625px;
 }
 @media screen and (min-width: 320px) {
   .background-image-container {
-    height: calc(13.3928571429vw + 557.1428571429px);
+    height: calc(11.9047619048vw + 586.9047619048px);
   }
 }
 @media screen and (min-width: 2000px) {
@@ -155,11 +155,11 @@
   text-align: center;
 }
 .background-image-container .landingPageHero .hero_content {
-  height: 300px;
+  height: 350px;
 }
 @media screen and (min-width: 320px) {
   .background-image-container .landingPageHero .hero_content {
-    height: calc(17.8571428571vw + 242.8571428571px);
+    height: calc(14.880952381vw + 302.380952381px);
   }
 }
 @media screen and (min-width: 2000px) {
@@ -206,7 +206,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 20px;
+}
+@media screen and (min-width: 700px) {
+  .background-image-container .landingPageHero .membership_fields {
+    flex-direction: row;
+  }
 }
 .background-image-container .landingPageHero .membership_fields .register_input {
   padding-left: 10px;
@@ -226,11 +232,11 @@
   }
 }
 .background-image-container .landingPageHero .membership_fields .register_input {
-  height: 50px;
+  height: 40px;
 }
 @media screen and (min-width: 320px) {
   .background-image-container .landingPageHero .membership_fields .register_input {
-    height: calc(1.1904761905vw + 46.1904761905px);
+    height: calc(1.7857142857vw + 34.2857142857px);
   }
 }
 @media screen and (min-width: 2000px) {
@@ -255,6 +261,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
   background-color: #e50914;
   color: white;
   border: none;
@@ -300,6 +307,11 @@
 }
 .background-image-container .landingPageHero .membership_fields .register_button svg {
   margin-left: 5px;
+}
+@media screen and (min-width: 700px) {
+  .background-image-container .landingPageHero .membership_fields .register_button {
+    margin-top: 0;
+  }
 }
 .background-image-container .landingPageHero sub {
   margin-top: 5px;
