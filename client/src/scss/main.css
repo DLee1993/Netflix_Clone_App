@@ -1,1 +1,101 @@
-/*# sourceMappingURL=main.css.map */
+.background-image-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.128), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/91f8800e-5e5e-428d-a409-05e82dbd002f/GB-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg) 0 0 no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  min-height: 700px;
+  border-bottom: 10px solid #222;
+}
+.background-image-container .promo_banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #222;
+  font-size: 18px;
+  height: 65px;
+}
+.background-image-container .promo_banner button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.background-image-container .promo_banner span {
+  font-weight: bold;
+}
+.background-image-container .promo_banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #0071eb;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.background-image-container .promo_banner a svg {
+  height: 25px;
+  width: auto;
+}
+.background-image-container .landingPageHero {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.background-image-container .landingPageHero {
+  width: 300px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero {
+    width: calc(91.0714285714vw + 8.5714285714px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero {
+    width: 1830px;
+  }
+}
+.background-image-container .landingPageHero .landingPageNav {
+  width: 100%;
+  min-height: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.background-image-container .landingPageHero .landingPageNav img {
+  width: 166px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .landingPageNav img {
+    width: calc(2.1428571429vw + 159.1428571429px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background-image-container .landingPageHero .landingPageNav img {
+    width: 190px;
+  }
+}
+.background-image-container .landingPageHero .landingPageNav .loginBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 34px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.background-image-container .landingPageHero .hero_content {
+  width: 100%;
+  min-height: 100%;
+}/*# sourceMappingURL=main.css.map */
