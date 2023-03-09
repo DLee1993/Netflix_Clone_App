@@ -164,9 +164,14 @@
                 background-color: #e50914;
                 color: white;
                 border: none;
+                cursor: pointer;
 
                 & svg {
                     margin-left: 5px;
+                }
+
+                &:hover{
+                    background-color: #f90814;
                 }
 
                 @media screen and (min-width: 700px) {
