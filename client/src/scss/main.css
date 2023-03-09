@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 .background-image-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.128), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/91f8800e-5e5e-428d-a409-05e82dbd002f/GB-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg) no-repeat;
-  background-position: center center;
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgb(0, 0, 0)), url(https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/91f8800e-5e5e-428d-a409-05e82dbd002f/GB-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg) no-repeat;
+  background-position: center 44%;
   background-size: cover;
   width: 100%;
-  height: 80vh;
-  min-height: 700px;
   border-bottom: 8px solid #222;
+}
+.background-image-container {
+  height: 600px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container {
+    height: calc(13.3928571429vw + 557.1428571429px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container {
+    height: 825px;
+  }
 }
 .background-image-container .promo_banner {
   display: flex;
@@ -15,7 +26,7 @@
   background-color: white;
   color: #222;
   font-size: 18px;
-  height: 65px;
+  padding: 20px 0;
 }
 .background-image-container .promo_banner button {
   background-color: #e50914;
@@ -75,18 +86,30 @@
   justify-content: space-between;
   align-items: center;
 }
-.background-image-container .landingPageHero .landingPageNav img {
+.background-image-container .landingPageHero .landingPageNav .clone_acknowledgement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.background-image-container .landingPageHero .landingPageNav .clone_acknowledgement img {
   width: 90px;
 }
 @media screen and (min-width: 320px) {
-  .background-image-container .landingPageHero .landingPageNav img {
+  .background-image-container .landingPageHero .landingPageNav .clone_acknowledgement img {
     width: calc(8.9285714286vw + 61.4285714286px);
   }
 }
 @media screen and (min-width: 1440px) {
-  .background-image-container .landingPageHero .landingPageNav img {
+  .background-image-container .landingPageHero .landingPageNav .clone_acknowledgement img {
     width: 190px;
   }
+}
+.background-image-container .landingPageHero .landingPageNav .clone_acknowledgement p {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #8c8c8c;
 }
 .background-image-container .landingPageHero .landingPageNav .loginBtn {
   display: flex;
@@ -124,8 +147,162 @@
   }
 }
 .background-image-container .landingPageHero .hero_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
-  min-height: 100%;
+  text-align: center;
+}
+.background-image-container .landingPageHero .hero_content {
+  height: 300px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .hero_content {
+    height: calc(17.8571428571vw + 242.8571428571px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero .hero_content {
+    height: 600px;
+  }
+}
+.background-image-container .landingPageHero .hero_content h1 {
+  max-width: 700px;
+}
+.background-image-container .landingPageHero .hero_content h1 {
+  font-size: 28px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .hero_content h1 {
+    font-size: calc(3.2142857143vw + 17.7142857143px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background-image-container .landingPageHero .hero_content h1 {
+    font-size: 64px;
+  }
+}
+.background-image-container .landingPageHero .hero_content .supHeading {
+  margin: 20px 0;
+}
+.background-image-container .landingPageHero .hero_content .supHeading {
+  font-size: 18px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .hero_content .supHeading {
+    font-size: calc(0.7142857143vw + 15.7142857143px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background-image-container .landingPageHero .hero_content .supHeading {
+    font-size: 26px;
+  }
+}
+.background-image-container .landingPageHero .hero_content .subHeading {
+  font-size: 19px;
+}
+.background-image-container .landingPageHero .membership_fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.background-image-container .landingPageHero .membership_fields .register_input {
+  padding-left: 10px;
+  color: #8c8c8c;
+}
+.background-image-container .landingPageHero .membership_fields .register_input {
+  width: 300px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .membership_fields .register_input {
+    width: calc(11.9047619048vw + 261.9047619048px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero .membership_fields .register_input {
+    width: 500px;
+  }
+}
+.background-image-container .landingPageHero .membership_fields .register_input {
+  height: 50px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .membership_fields .register_input {
+    height: calc(1.1904761905vw + 46.1904761905px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero .membership_fields .register_input {
+    height: 70px;
+  }
+}
+.background-image-container .landingPageHero .membership_fields .register_input {
+  font-size: 14px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .membership_fields .register_input {
+    font-size: calc(0.119047619vw + 13.619047619px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero .membership_fields .register_input {
+    font-size: 16px;
+  }
+}
+.background-image-container .landingPageHero .membership_fields .register_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e50914;
+  color: white;
+  border: none;
+}
+.background-image-container .landingPageHero .membership_fields .register_button {
+  width: 130px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .membership_fields .register_button {
+    width: calc(6.8452380952vw + 108.0952380952px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero .membership_fields .register_button {
+    width: 245px;
+  }
+}
+.background-image-container .landingPageHero .membership_fields .register_button {
+  height: 40px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .membership_fields .register_button {
+    height: calc(1.7857142857vw + 34.2857142857px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero .membership_fields .register_button {
+    height: 70px;
+  }
+}
+.background-image-container .landingPageHero .membership_fields .register_button {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .membership_fields .register_button {
+    font-size: calc(0.8333333333vw + 13.3333333333px);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .background-image-container .landingPageHero .membership_fields .register_button {
+    font-size: 30px;
+  }
+}
+.background-image-container .landingPageHero .membership_fields .register_button svg {
+  margin-left: 5px;
+}
+.background-image-container .landingPageHero sub {
+  margin-top: 5px;
 }
 
 * {

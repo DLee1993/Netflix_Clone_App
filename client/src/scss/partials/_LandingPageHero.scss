@@ -1,17 +1,21 @@
 .background-image-container {
     background: linear-gradient(
-            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.8),
             rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.128),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.9)
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 1)
         ),
-        url(https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/91f8800e-5e5e-428d-a409-05e82dbd002f/GB-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg) no-repeat;
-    background-position: center center;
+        url(https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/91f8800e-5e5e-428d-a409-05e82dbd002f/GB-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg)
+            no-repeat;
+    background-position: center 44%;
     background-size: cover;
     width: 100%;
-    height: 80vh;
-    min-height: 700px;
+    @include fluidType(height, 320px, 2000px, 600px, 825px);
     border-bottom: 8px solid #222;
 
     .promo_banner {
@@ -21,7 +25,7 @@
         background-color: white;
         color: #222;
         font-size: 18px;
-        height: 65px;
+        padding: 20px 0;
 
         & button {
             background-color: #e50914;
@@ -75,8 +79,22 @@
             justify-content: space-between;
             align-items: center;
 
-            & img {
-                @include fluidType(width, 320px, 1440px, 90px, 190px);
+            .clone_acknowledgement{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                & img {
+                    @include fluidType(width, 320px, 1440px, 90px, 190px);
+                }
+
+                & p {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 7px;
+                    color: #8c8c8c;
+                }
             }
 
             & .loginBtn {
@@ -93,8 +111,62 @@
         }
 
         .hero_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             width: 100%;
-            min-height: 100%;
+            @include fluidType(height, 320px, 2000px, 300px, 600px);
+            text-align: center;
+
+            & h1 {
+                @include fluidType(font-size, 320px, 1440px, 28px, 64px);
+                max-width: 700px;
+            }
+
+            & .supHeading {
+                @include fluidType(font-size, 320px, 1440px, 18px, 26px);
+                margin: 20px 0;
+            }
+
+            & .subHeading {
+                font-size: 19px;
+            }
+        }
+
+        .membership_fields {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+            & .register_input {
+                @include fluidType(width, 320px, 2000px, 300px, 500px);
+                @include fluidType(height, 320px, 2000px, 50px, 70px);
+                @include fluidType(font-size, 320px, 2000px, 14px, 16px);
+                padding-left: 10px;
+                color: #8c8c8c;
+            }
+
+            & .register_button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include fluidType(width, 320px, 2000px, 130px, 245px);
+                @include fluidType(height, 320px, 2000px, 40px, 70px);
+                @include fluidType(font-size, 320px, 2000px, 16px, 30px);
+                background-color: #e50914;
+                color: white;
+                border: none;
+
+                & svg {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        sub {
+            margin-top: 5px;
         }
     }
 }
