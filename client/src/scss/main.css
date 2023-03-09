@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 .background-image-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.128), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/91f8800e-5e5e-428d-a409-05e82dbd002f/GB-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg) 0 0 no-repeat;
-  background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.128), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(https://assets.nflxext.com/ffe/siteui/vlv3/5523db5a-e2b2-497f-a88b-61f175c3dbad/91f8800e-5e5e-428d-a409-05e82dbd002f/GB-en-20230306-popsignuptwoweeks-perspective_alpha_website_small.jpg) no-repeat;
+  background-position: center center;
   background-size: cover;
   width: 100%;
   height: 80vh;
   min-height: 700px;
-  border-bottom: 10px solid #222;
+  border-bottom: 8px solid #222;
 }
 .background-image-container .promo_banner {
   display: flex;
@@ -20,7 +21,7 @@
   background-color: #e50914;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   padding: 5px 10px;
   font-weight: bold;
   margin-right: 20px;
@@ -32,17 +33,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 35px;
   text-decoration: none;
   color: #0071eb;
   font-weight: 500;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
   letter-spacing: 0.5px;
 }
 .background-image-container .promo_banner a svg {
   height: 25px;
   width: auto;
+}
+.background-image-container .promo_banner a:visited {
+  border: 1px solid black;
 }
 .background-image-container .landingPageHero {
   margin: 0 auto;
@@ -72,11 +76,11 @@
   align-items: center;
 }
 .background-image-container .landingPageHero .landingPageNav img {
-  width: 166px;
+  width: 90px;
 }
 @media screen and (min-width: 320px) {
   .background-image-container .landingPageHero .landingPageNav img {
-    width: calc(2.1428571429vw + 159.1428571429px);
+    width: calc(8.9285714286vw + 61.4285714286px);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -88,14 +92,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 84px;
-  height: 34px;
   background-color: #e50914;
   color: white;
   text-decoration: none;
   border-radius: 3px;
 }
+.background-image-container .landingPageHero .landingPageNav .loginBtn {
+  width: 60px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .landingPageNav .loginBtn {
+    width: calc(2.2321428571vw + 52.8571428571px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background-image-container .landingPageHero .landingPageNav .loginBtn {
+    width: 85px;
+  }
+}
+.background-image-container .landingPageHero .landingPageNav .loginBtn {
+  height: 25px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .landingPageNav .loginBtn {
+    height: calc(0.8928571429vw + 22.1428571429px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background-image-container .landingPageHero .landingPageNav .loginBtn {
+    height: 35px;
+  }
+}
 .background-image-container .landingPageHero .hero_content {
   width: 100%;
   min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=main.css.map */
