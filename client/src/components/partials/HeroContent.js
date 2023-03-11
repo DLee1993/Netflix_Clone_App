@@ -5,7 +5,8 @@ const HeroContent = () => {
     const [registerValue, setRegisterValue] = useState("johnDoe@example.com");
 
     const registerUser = (e) => {
-        console.log("submitted");
+        setRegisterValue("johnDoe@example.com");
+        console.log('submitted')
     };
 
     return (
@@ -25,7 +26,6 @@ const HeroContent = () => {
                     max-length='50'
                     value={registerValue}
                     readOnly
-                    placeholder='Email Address'
                 />
                 <button onClick={registerUser} className='register_button'>
                     Get Started <IoIosArrowForward />
