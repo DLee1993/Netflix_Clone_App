@@ -15,57 +15,11 @@
     background-position: center 44%;
     background-size: cover;
     width: 100%;
-    @include fluidType(height, 320px, 2000px, 625px, 825px);
-    border-bottom: 8px solid #222;
-
-    .promo_banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: #222;
-        font-size: 18px;
-        padding: 20px 0;
-
-        & button {
-            background-color: #e50914;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            padding: 5px 10px;
-            font-weight: bold;
-            margin-right: 20px;
-        }
-
-        & span {
-            font-weight: bold;
-        }
-
-        & a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 35px;
-            text-decoration: none;
-            color: #0071eb;
-            font-weight: 500;
-            font-size: 15px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-
-            & svg {
-                height: 25px;
-                width: auto;
-            }
-
-            &:visited {
-                border: 1px solid black;
-            }
-        }
-    }
+    height: 100vh;
 
     .landingPageHero {
         @include fluidType(width, 320px, 2000px, 300px, 1830px);
+        height: inherit;
         margin: 0 auto;
         display: flex;
         justify-content: flex-start;
@@ -74,7 +28,7 @@
 
         .landingPageNav {
             width: 100%;
-            min-height: 120px;
+            min-height: 100px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -116,7 +70,7 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
-            @include fluidType(height, 320px, 2000px, 350px, 600px);
+            height: 100%;
             text-align: center;
 
             & h1 {
@@ -146,11 +100,19 @@
             }
 
             & .register_input {
-                @include fluidType(width, 320px, 2000px, 300px, 500px);
+                @include fluidType(width, 320px, 2000px, 200px, 500px);
                 @include fluidType(height, 320px, 2000px, 40px, 70px);
                 @include fluidType(font-size, 320px, 2000px, 14px, 16px);
                 padding-left: 10px;
                 color: #8c8c8c;
+                background-color: rgba(0, 0, 0, 0.7);
+                border: 1px solid #8c8c8c;
+                border-radius: 5px;
+
+                
+                @media screen and (min-width: 700px) {
+                    margin-right: 10px;
+                }
             }
 
             & .register_button {
@@ -158,12 +120,13 @@
                 justify-content: center;
                 align-items: center;
                 margin-top: 10px;
-                @include fluidType(width, 320px, 2000px, 130px, 245px);
+                @include fluidType(width, 320px, 2000px, 200px, 245px);
                 @include fluidType(height, 320px, 2000px, 40px, 70px);
                 @include fluidType(font-size, 320px, 2000px, 16px, 30px);
                 background-color: #e50914;
                 color: white;
                 border: none;
+                border-radius: 5px;
                 cursor: pointer;
 
                 & svg {
