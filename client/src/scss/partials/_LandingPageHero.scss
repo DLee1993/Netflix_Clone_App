@@ -74,12 +74,12 @@
 
         .landingPageNav {
             width: 100%;
-            min-height: 135px;
+            min-height: 120px;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            .clone_acknowledgement{
+            .clone_acknowledgement {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -112,7 +112,7 @@
 
         .hero_content {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             flex-direction: column;
             width: 100%;
@@ -120,13 +120,13 @@
             text-align: center;
 
             & h1 {
-                @include fluidType(font-size, 320px, 1440px, 28px, 64px);
-                max-width: 700px;
+                @include fluidType(font-size, 320px, 2000px, 28px, 64px);
+                max-width: 800px;
             }
 
             & .supHeading {
                 @include fluidType(font-size, 320px, 1440px, 18px, 26px);
-                margin: 20px 0;
+                margin: 10px 0;
             }
 
             & .subHeading {
@@ -170,7 +170,7 @@
                     margin-left: 5px;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: #f90814;
                 }
 
@@ -180,8 +180,16 @@
             }
         }
 
-        sub {
-            margin-top: 5px;
+        .attribution {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            & img {
+                @include fluidType(width, 320px, 1440px, 150px, 200px);
+                margin-left: 5px;
+            }
         }
     }
 }

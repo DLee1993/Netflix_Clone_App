@@ -81,7 +81,7 @@
 }
 .background-image-container .landingPageHero .landingPageNav {
   width: 100%;
-  min-height: 135px;
+  min-height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,7 +148,7 @@
 }
 .background-image-container .landingPageHero .hero_content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -168,23 +168,23 @@
   }
 }
 .background-image-container .landingPageHero .hero_content h1 {
-  max-width: 700px;
+  max-width: 800px;
 }
 .background-image-container .landingPageHero .hero_content h1 {
   font-size: 28px;
 }
 @media screen and (min-width: 320px) {
   .background-image-container .landingPageHero .hero_content h1 {
-    font-size: calc(3.2142857143vw + 17.7142857143px);
+    font-size: calc(2.1428571429vw + 21.1428571429px);
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2000px) {
   .background-image-container .landingPageHero .hero_content h1 {
     font-size: 64px;
   }
 }
 .background-image-container .landingPageHero .hero_content .supHeading {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .background-image-container .landingPageHero .hero_content .supHeading {
   font-size: 18px;
@@ -317,8 +317,27 @@
     margin-top: 0;
   }
 }
-.background-image-container .landingPageHero sub {
-  margin-top: 5px;
+.background-image-container .landingPageHero .attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.background-image-container .landingPageHero .attribution img {
+  margin-left: 5px;
+}
+.background-image-container .landingPageHero .attribution img {
+  width: 150px;
+}
+@media screen and (min-width: 320px) {
+  .background-image-container .landingPageHero .attribution img {
+    width: calc(4.4642857143vw + 135.7142857143px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .background-image-container .landingPageHero .attribution img {
+    width: 200px;
+  }
 }
 
 * {

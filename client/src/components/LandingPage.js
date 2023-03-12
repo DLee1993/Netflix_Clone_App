@@ -1,7 +1,7 @@
 import LandingPageNav from "./partials/LandingPageNav";
 import HeroContent from "./partials/HeroContent";
 import Promotions from "./partials/Promotions";
-import DownloadAnimation from "./partials/DownloadAnimation";
+import { WatchDevices, StreamDevices, Profiles, Downloads } from "./partials/Cards";
 
 const LandingPage = () => {
     return (
@@ -12,6 +12,12 @@ const LandingPage = () => {
                     <LandingPageNav />
                     <HeroContent />
                 </section>
+            </section>
+            <section className='story-cards membership_benefits'>
+                <WatchDevices />
+                <StreamDevices />
+                <Profiles />
+                <Downloads />
             </section>
         </main>
     );

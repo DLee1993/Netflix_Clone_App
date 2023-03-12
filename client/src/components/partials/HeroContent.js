@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import img from "../../assets/themovieDatabase2.svg"
 
 const HeroContent = () => {
     const [registerValue, setRegisterValue] = useState("johnDoe@example.com");
@@ -32,6 +33,10 @@ const HeroContent = () => {
                 </button>
             </section>
             <sub>Please use the provided email address to simulate registering as a user</sub>
+            <span className="attribution">
+                powered by
+                <img src={img} alt="" />
+            </span>
         </section>
     );
 };

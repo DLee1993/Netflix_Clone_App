@@ -4,8 +4,6 @@ import LandingPage from "./components/LandingPage";
 import Login from "./features/auth/Login";
 import Register from "./features/auth/Register";
 
-// import img from "./assets/themovieDatabase.svg"
-
 const App = () => {
     return (
         <Routes>
