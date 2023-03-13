@@ -99,19 +99,48 @@
                 flex-direction: row;
             }
 
-            & .register_input {
-                @include fluidType(width, 320px, 2000px, 200px, 500px);
-                @include fluidType(height, 320px, 2000px, 40px, 70px);
-                @include fluidType(font-size, 320px, 2000px, 14px, 16px);
-                padding-left: 10px;
-                color: #8c8c8c;
-                background-color: rgba(0, 0, 0, 0.7);
-                border: 1px solid #8c8c8c;
-                border-radius: 5px;
+            & .input_container{
+                position: relative;
 
-                
-                @media screen and (min-width: 700px) {
-                    margin-right: 10px;
+                & label{
+                    visibility: hidden;
+                    position: absolute;
+                    top: 5px;
+                    left: 10px;
+                    pointer-events: none;
+                    font-size: 12px;
+                }
+
+                & .visual_input_label{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 10px;
+                    pointer-events: none;
+                    transition: all .3s ease;
+                }
+
+                & .register_input {
+                    @include fluidType(width, 320px, 2000px, 200px, 500px);
+                    @include fluidType(height, 320px, 2000px, 40px, 70px);
+                    @include fluidType(font-size, 320px, 2000px, 14px, 16px);
+                    padding: 10px 0 0 10px;
+                    color: #8c8c8c;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border: 1px solid #8c8c8c;
+                    border-radius: 5px;
+                    transition: all 0.3s ease;
+    
+                    @media screen and (min-width: 700px) {
+                        margin-right: 10px;
+                    }
+                }
+
+                & .register_input:focus + span{
+                    top: 5px;
+                    transform: none;
+                    font-size: 12px;
+                    transition: all .3s ease;
                 }
             }
 
