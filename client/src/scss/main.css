@@ -34,30 +34,18 @@
   justify-content: space-between;
   align-items: center;
 }
-.background-image-container .landingPageHero .landingPageNav .clone_acknowledgement {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.background-image-container .landingPageHero .landingPageNav .clone_acknowledgement img {
+.background-image-container .landingPageHero .landingPageNav img {
   width: 90px;
 }
 @media screen and (min-width: 320px) {
-  .background-image-container .landingPageHero .landingPageNav .clone_acknowledgement img {
+  .background-image-container .landingPageHero .landingPageNav img {
     width: calc(8.9285714286vw + 61.4285714286px);
   }
 }
 @media screen and (min-width: 1440px) {
-  .background-image-container .landingPageHero .landingPageNav .clone_acknowledgement img {
+  .background-image-container .landingPageHero .landingPageNav img {
     width: 190px;
   }
-}
-.background-image-container .landingPageHero .landingPageNav .clone_acknowledgement p {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  color: #8c8c8c;
 }
 .background-image-container .landingPageHero .landingPageNav .loginBtn {
   display: flex;

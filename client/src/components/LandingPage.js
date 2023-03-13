@@ -1,4 +1,4 @@
-import LandingPageNav from "./partials/LandingPageNav";
+import LandingPageNav from "./partials/Nav";
 import HeroContent from "./partials/HeroContent";
 
 const LandingPage = () => {
