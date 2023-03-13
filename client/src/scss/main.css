@@ -299,6 +299,146 @@
   }
 }
 
+.story_card {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px;
+  height: 90vh;
+  border-top: 5px solid #222;
+  overflow: hidden;
+}
+@media screen and (min-width: 700px) {
+  .story_card {
+    flex-direction: row;
+  }
+}
+.story_card .story_card_text {
+  flex-direction: column;
+}
+.story_card .story_card_text h1 {
+  max-width: 400px;
+  text-align: center;
+}
+.story_card .story_card_text h1 {
+  font-size: 28px;
+}
+@media screen and (min-width: 320px) {
+  .story_card .story_card_text h1 {
+    font-size: calc(1.7857142857vw + 22.2857142857px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .story_card .story_card_text h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .story_card .story_card_text h1 {
+    text-align: left;
+  }
+}
+.story_card .story_card_text p {
+  width: 90%;
+  max-width: 500px;
+  margin-top: 10px;
+  text-align: center;
+}
+.story_card .story_card_text p {
+  font-size: 18px;
+}
+@media screen and (min-width: 320px) {
+  .story_card .story_card_text p {
+    font-size: calc(0.5357142857vw + 16.2857142857px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .story_card .story_card_text p {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .story_card .story_card_text p {
+    text-align: left;
+  }
+}
+.story_card .story_card_image .watchAnywhere_img {
+  width: 300px;
+}
+@media screen and (min-width: 320px) {
+  .story_card .story_card_image .watchAnywhere_img {
+    width: calc(17.8571428571vw + 242.8571428571px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .story_card .story_card_image .watchAnywhere_img {
+    width: 500px;
+  }
+}
+.story_card .story_card_image .streamAnywhere_img {
+  width: 300px;
+}
+@media screen and (min-width: 320px) {
+  .story_card .story_card_image .streamAnywhere_img {
+    width: calc(17.8571428571vw + 242.8571428571px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .story_card .story_card_image .streamAnywhere_img {
+    width: 500px;
+  }
+}
+.story_card .story_card_image .profiles_img {
+  width: 150px;
+}
+@media screen and (min-width: 320px) {
+  .story_card .story_card_image .profiles_img {
+    width: calc(13.3928571429vw + 107.1428571429px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .story_card .story_card_image .profiles_img {
+    width: 300px;
+  }
+}
+.story_card .story_card_image .download_img {
+  width: 150px;
+}
+@media screen and (min-width: 320px) {
+  .story_card .story_card_image .download_img {
+    width: calc(13.3928571429vw + 107.1428571429px);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .story_card .story_card_image .download_img {
+    width: 300px;
+  }
+}
+.story_card .download_animation_container {
+  position: relative;
+}
+.story_card .download_Animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  border: 3px solid #222;
+  border-radius: 5px;
+}
+.story_card .download_Animation p {
+  display: flex;
+  flex-direction: column;
+}
+.story_card .download_Animation span {
+  color: #0071eb;
+}
+
 * {
   margin: 0;
   padding: 0;

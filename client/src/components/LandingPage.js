@@ -1,5 +1,6 @@
 import LandingPageNav from "./partials/Nav";
 import HeroContent from "./partials/HeroContent";
+import { WatchDevices, WatchEverywhere, Profiles, Download } from "./partials/Cards";
 
 const LandingPage = () => {
     return (
@@ -9,6 +10,12 @@ const LandingPage = () => {
                     <LandingPageNav />
                     <HeroContent />
                 </section>
+            </section>
+            <section className='story_card_container'>
+                <WatchDevices />
+                <WatchEverywhere />
+                <Profiles />
+                <Download />
             </section>
         </main>
     );
